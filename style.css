@@ -1211,6 +1211,10 @@ img {font-size:60%}
 {
 list-style:none !important;
 }
+
+.single_job_listing .company {
+    width: auto;
+}
 /* ==|== media queries ====================================================== */
 
 @media only screen and (min-width: 480px) {
