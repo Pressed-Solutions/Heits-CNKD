@@ -179,6 +179,7 @@ body {
 }
 #logo h1 a {
 	background: url('img/logo.png');
+    background-size: 100%;
 	width: 279px;
 	height: 126px;
 	padding: 0;
