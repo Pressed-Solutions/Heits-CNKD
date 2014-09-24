@@ -46,7 +46,7 @@
 	</head>
 	<body <?php body_class(); ?>>
 		<div id="container">
-    <header>
+    <header class="site-header">
 		<div class="clearfix">
 			<div id="logo">
 				<h1><a class="ir" href="/">Heits Building Services</a></h1>

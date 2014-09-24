@@ -166,7 +166,7 @@ body {
 
 /* HEADER STYLES */
 
-header {
+.site-header {
 	background: url('img/guy.png')  415px 0 no-repeat;
 	padding: 0;
 	margin: 0;
