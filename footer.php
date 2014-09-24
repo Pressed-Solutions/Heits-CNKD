@@ -23,7 +23,7 @@
 		</nav>
 		<div id="accolades">
 
-        <ul class="company">
+        <ul class="company-awards">
 	<li class="coc"><a href="http://business.necchamber.org/list/member/heits-building-service-franklin.htm">coc</a></li>
 	<li class="bbb"><a href="http://www.bbb.org/cincinnati/business-reviews/janitor-service/heits-building-services-in-cincinnati-oh-90008026">bbb</a></li>
 	<li class="inc5000"><a href="http://www.inc.com/inc5000/profile/heits-building-services">inc5000</a></li>
@@ -31,7 +31,7 @@
 <li class="facebook"><a href="http://www.facebook.com/heitsbuildingservices">facebook</a></li>
 	<li class="twitter"><a href="https://twitter.com/HeitsBuilding">twitter</a></li>
 
-</ul>
+</ul><!-- company awards -->
 		</div>
         </div>
 

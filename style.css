@@ -1088,7 +1088,7 @@ Author URI: http://dev7studios.com
 	width:855px;
 	float:left;
 	}
-.company {
+.company-awards {
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -1096,7 +1096,7 @@ Author URI: http://dev7studios.com
 	float: right;
 	width: 740px;
 }
-.company li {
+.company-awards li {
 	padding: 0;
 	height:90px;
 	margin-right: 1em;
@@ -1106,7 +1106,7 @@ Author URI: http://dev7studios.com
 	margin-bottom: 0;
 	margin-left: 0;
 }
-.company li a, .company li a:visited {
+.company-awards li a, .company-awards li a:visited {
 	display: block;
 	text-decoration: none;
 	text-indent: -9999px;
@@ -1131,8 +1131,8 @@ Author URI: http://dev7studios.com
 .twitter {background-image: url(img/twitter_hover.jpg); width: 45px; height:47px;}
 .twitter a {background-image: url(img/twitter.jpg);}
 
-ul.company li a:hover {background: none;}
-.company li {float: left;}
+ul.company-awards li a:hover {background: none;}
+.company-awards li {float: left;}
 
 
 /*     end      */
@@ -1214,7 +1214,7 @@ img {font-size:60%}
 list-style:none !important;
 }
 
-.single_job_listing .company {
+.single_job_listing .company-awards {
     width: auto;
 }
 /* ==|== media queries ====================================================== */
