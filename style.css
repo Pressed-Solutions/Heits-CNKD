@@ -1220,11 +1220,11 @@ list-style:none !important;
 }
 
 .single_job_listing .application .apply-with-linkedin-profile dl dd {
-    margin-left: 2em;
+    margin-left: 2em !important;
 }
 
 .single_job_listing .application .apply-with-linkedin-profile dl dd.apply-with-linkedin-cover-letter {
-    margin-left: 0;
+    margin-left: 0 !important;
 }
 
 /* ==|== media queries ====================================================== */
