@@ -23,10 +23,7 @@ get_header(); ?>
                     <?php if ( is_user_logged_in() ) { echo '<p><a href="/job-dashboard/">Back to all jobs</a></p>'; } ?>
                     <?php the_content(); ?>
                     <?php if ( is_user_logged_in() ) { echo '<p><a href="/wp-admin/post-new.php?post_type=job_listing">Add new job listing</a></p>'; } ?>
-                    <?php wp_link_pages( array( 'before' => '' . __( 'Pages:', 'boilerplate' ), 'after' => '' ) ); ?>
-                    <?php edit_post_link( __( 'Edit', 'boilerplate' ), '', '' ); ?>
 
-                    <?php comments_template( '', true ); ?>
 
     <?php endwhile; ?>
     </div><!-- .pad -->
