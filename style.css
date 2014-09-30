@@ -1218,6 +1218,15 @@ list-style:none !important;
 .single_job_listing .company-awards {
     width: auto;
 }
+
+.single_job_listing .application .apply-with-linkedin-profile dl dd {
+    margin-left: 2em;
+}
+
+.single_job_listing .application .apply-with-linkedin-profile dl dd.apply-with-linkedin-cover-letter {
+    margin-left: 0;
+}
+
 /* ==|== media queries ====================================================== */
 
 @media only screen and (min-width: 480px) {
