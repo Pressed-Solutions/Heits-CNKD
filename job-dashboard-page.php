@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: One column, no sidebar
+ * Template Name: Job Dashboard
  *
  * A custom page template without sidebar.
  *
