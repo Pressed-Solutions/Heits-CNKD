@@ -581,4 +581,19 @@ function appthemes_check_user_role( $role, $user_id = null ) {
     return in_array( $role, (array) $user->roles );
 }
 
-?>
+// add link to job dashboard in frontend admin bar
+function tweak_job_manager_admin_menu( $admin_bar ){
+    $admin_bar->add_menu( array(
+        'id'    => 'job-dashboard',
+        'title' => 'Job Dashboard',
+        'href'  => '/job-dashboard/',
+        'meta'  => array(
+            'title' => __('Job Dashboard'),
+        ),
+    ));
+    $admin_bar->remove_node( 'comments' );
+    $admin_bar->remove_node( 'new-content' );
+    $admin_bar->remove_node( 'wpseo-menu' );
+    $admin_bar->remove_node( 'notes' );
+}
+if ( appthemes_check_user_role( 'jobmanager' ) ) { add_action( 'admin_bar_menu', 'tweak_job_manager_admin_menu', 999 ); }
