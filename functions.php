@@ -548,4 +548,37 @@ function execute_php($html){
 //ADD WIDGET FUNCTIONALITY: SHORTCODES
 add_filter('widget_text', 'do_shortcode');
 
+// tweak dashboard for job manager role
+function remove_admin_menus() {
+    remove_menu_page( 'index.php' );                        // Dashboard
+    remove_menu_page( 'edit.php' );                         // Posts
+    remove_menu_page( 'edit.php?post_type=slider-images' ); // Slider Images
+    remove_menu_page( 'edit.php?post_type=testimonials' );  // Testimonials
+    remove_menu_page( 'edit-comments.php' );                // Comments
+    remove_menu_page( 'tools.php' );                        // Tools
+}
+if ( appthemes_check_user_role( 'jobmanager' ) ) { add_action( 'admin_menu', 'remove_admin_menus' ); }
+
+// hide jetpack admin menu item from non-admins
+function remove_jetpack() {
+    if( class_exists( 'Jetpack' ) && !current_user_can( 'manage_options' ) ) {
+        remove_menu_page( 'jetpack' );
+    }
+}
+add_action( 'admin_init', 'remove_jetpack' );
+
+// get logged-in user's role
+function appthemes_check_user_role( $role, $user_id = null ) {
+
+    if ( is_numeric( $user_id ) )
+	$user = get_userdata( $user_id );
+    else
+        $user = wp_get_current_user();
+
+    if ( empty( $user ) )
+	return false;
+
+    return in_array( $role, (array) $user->roles );
+}
+
 ?>
