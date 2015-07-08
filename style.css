@@ -1227,6 +1227,11 @@ list-style:none !important;
     margin-left: 0 !important;
 }
 
+.flyzoo-login-desktop {
+    top: calc(50% - 225px);
+    left: calc(50% - 195px);
+}
+
 /* ==|== media queries ====================================================== */
 
 @media only screen and (min-width: 480px) {
